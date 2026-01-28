@@ -1,0 +1,15 @@
+{
+  "gameId": "renpy:test4-1587319361",
+  "plugins": [
+    {
+      "pluginId": "uwg.oppai_odyssey.autogen",
+      "version": "0.1.0",
+      "style": "vn",
+      "assetUrl": "https://raw.githubusercontent.com/OlaveOyol/UWG-Registry/main/plugins/uwg.oppai_odyssey.autogen-0.1.0.zip",
+      "sha256": "879cd4f0048a005a642304822b73bf26b777ef6a870c6098f550bcf1f17361bc",
+      "uwgApi": "1.0.0",
+      "renpyMin": "8.0.0"
+    }
+  ]
+}
+

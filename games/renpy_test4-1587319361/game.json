@@ -1,0 +1,8 @@
+{
+  "gameId": "renpy:test4-1587319361",
+  "displayName": "OppaiOdyssey",
+  "saveDirectory": "test4-1587319361",
+  "aliases": ["renpy:oppai_odyssey"],
+  "notes": "Reference/test entry. saveDirectory pulled from game/options.rpy."
+}
+

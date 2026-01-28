@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://uwg.example/schemas/uwg-registry-index.schema.json",
+  "title": "UWG Registry Index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["registryVersion", "generatedAt", "games"],
+  "properties": {
+    "registryVersion": { "type": "integer", "minimum": 1 },
+    "generatedAt": { "type": "string", "minLength": 10 },
+    "games": {
+      "type": "object",
+      "propertyNames": { "type": "string", "minLength": 3 },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["gameId", "displayName", "plugins"],
+        "properties": {
+          "gameId": { "type": "string", "minLength": 3 },
+          "displayName": { "type": "string", "minLength": 1 },
+          "saveDirectory": { "type": "string", "minLength": 1 },
+          "aliases": { "type": "array", "items": { "type": "string" } },
+          "plugins": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["pluginId", "version", "style", "assetUrl", "sha256", "uwgApi"],
+              "properties": {
+                "pluginId": { "type": "string", "pattern": "^[a-z0-9._-]{3,64}$" },
+                "version": { "type": "string" },
+                "style": { "type": "string", "enum": ["vn", "sandbox", "hybrid"] },
+                "assetUrl": { "type": "string", "minLength": 10 },
+                "sha256": { "type": "string", "pattern": "^[A-Fa-f0-9]{64}$" },
+                "uwgApi": { "type": "string" },
+                "renpyMin": { "type": "string" },
+                "renpyMax": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

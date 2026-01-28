@@ -1,16 +1,21 @@
-# UWG Registry (test repo)
+# UWG Registry
 
-This is a minimal GitHub-hostable registry repo for UWG.
+This repo is a single public registry for UWG (Universal Walkthrough Generator).
 
 ## Contents
-- `dist/index.json` – registry index UWG downloads.
-- `plugins/` – plugin zip files referenced by the index.
+- `games/` – per-game entries (PR-friendly).
+- `dist/index.json` – generated registry index UWG downloads.
+- `plugins/` – plugin zip files referenced by the index (simple hosting for now).
+- `schemas/` – JSON Schemas used by CI validation.
+- `tools/` – scripts to build/validate the registry.
+- `.github/workflows/validate.yml` – CI validation.
 
-## How to use (OppaiOdyssey test)
-1. Create a GitHub repo and push this folder.
-2. Edit `dist/index.json` and replace:
-   - `<OWNER>` with your GitHub username/org
-   - `<REPO>` with the repo name
-3. In the target game, set:
-   - `UWG_REGISTRY_INDEX_URL = "https://raw.githubusercontent.com/<OWNER>/<REPO>/main/dist/index.json"`
+## For UWG users
+Point UWG at:
+- `https://raw.githubusercontent.com/OlaveOyol/UWG-Registry/main/dist/index.json`
 
+## For contributors
+1. Add/edit a game entry under `games/<slug>/`.
+2. Run `python tools/build_index.py` (writes `dist/index.json`).
+3. Run `python tools/validate.py`.
+4. Open a PR.

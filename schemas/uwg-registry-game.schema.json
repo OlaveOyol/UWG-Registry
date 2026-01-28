@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://uwg.example/schemas/uwg-registry-game.schema.json",
+  "title": "UWG Registry Game Metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["gameId", "displayName", "saveDirectory"],
+  "properties": {
+    "gameId": { "type": "string", "minLength": 3 },
+    "displayName": { "type": "string", "minLength": 1 },
+    "saveDirectory": { "type": "string", "minLength": 1 },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "string" }
+  }
+}
+

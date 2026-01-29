@@ -3,10 +3,10 @@
   "plugins": [
     {
       "pluginId": "uwg.summertimesaga.sandbox",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "style": "sandbox",
-      "assetUrl": "https://raw.githubusercontent.com/OlaveOyol/UWG-Registry/main/plugins/uwg.summertimesaga.sandbox-0.2.0.zip",
-      "sha256": "4f86ce99fa5a16b401788d7e84411621272392ad83e0ac72907122ffd7c7dc43",
+      "assetUrl": "https://raw.githubusercontent.com/OlaveOyol/UWG-Registry/main/plugins/uwg.summertimesaga.sandbox-0.3.0.zip",
+      "sha256": "c358ab9dbc3db4eda7326dee84ecc3a08a14c8cf08ad7b235245114910337703",
       "uwgApi": "1.0.0",
       "renpyMin": "8.0.0"
     }

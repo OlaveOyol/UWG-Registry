@@ -1,0 +1,8 @@
+{
+  "gameId": "renpy:summertimesaga",
+  "displayName": "Summertime Saga",
+  "saveDirectory": "summertimesaga",
+  "aliases": ["renpy:summertime_saga"],
+  "notes": "Sandbox-style test entry. saveDirectory inferred from existing %APPDATA%/RenPy/summertimesaga."
+}
+

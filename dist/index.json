@@ -1,6 +1,6 @@
 {
   "registryVersion": 1,
-  "generatedAt": "2026-01-28T23:38:58.833734Z",
+  "generatedAt": "2026-01-29T13:54:54.901669Z",
   "games": {
     "renpy:oppaiodyssey": {
       "gameId": "renpy:oppaiodyssey",
@@ -17,6 +17,25 @@
           "style": "vn",
           "assetUrl": "https://raw.githubusercontent.com/OlaveOyol/UWG-Registry/main/plugins/uwg.oppai_odyssey.autogen-0.1.0.zip",
           "sha256": "879cd4f0048a005a642304822b73bf26b777ef6a870c6098f550bcf1f17361bc",
+          "uwgApi": "1.0.0",
+          "renpyMin": "8.0.0"
+        }
+      ]
+    },
+    "renpy:summertimesaga": {
+      "gameId": "renpy:summertimesaga",
+      "displayName": "Summertime Saga",
+      "saveDirectory": "summertimesaga",
+      "aliases": [
+        "renpy:summertime_saga"
+      ],
+      "plugins": [
+        {
+          "pluginId": "uwg.summertimesaga.sandbox",
+          "version": "0.1.0",
+          "style": "sandbox",
+          "assetUrl": "https://raw.githubusercontent.com/OlaveOyol/UWG-Registry/main/plugins/uwg.summertimesaga.sandbox-0.1.0.zip",
+          "sha256": "cf33c66facc517ccb8750ba31c9ed9348849a7435d2e41b1572cb0dc5d1a6aa9",
           "uwgApi": "1.0.0",
           "renpyMin": "8.0.0"
         }

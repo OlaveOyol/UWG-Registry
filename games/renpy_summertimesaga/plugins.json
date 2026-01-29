@@ -1,0 +1,15 @@
+{
+  "gameId": "renpy:summertimesaga",
+  "plugins": [
+    {
+      "pluginId": "uwg.summertimesaga.sandbox",
+      "version": "0.1.0",
+      "style": "sandbox",
+      "assetUrl": "https://raw.githubusercontent.com/OlaveOyol/UWG-Registry/main/plugins/uwg.summertimesaga.sandbox-0.1.0.zip",
+      "sha256": "cf33c66facc517ccb8750ba31c9ed9348849a7435d2e41b1572cb0dc5d1a6aa9",
+      "uwgApi": "1.0.0",
+      "renpyMin": "8.0.0"
+    }
+  ]
+}
+
